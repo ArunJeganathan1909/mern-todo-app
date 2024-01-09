@@ -1,0 +1,168 @@
+/* styles.css */
+
+.display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .display-header{
+    display: flex;
+  }
+
+  .display-content {
+    display: flex;
+  }
+  
+  
+  .date {
+    display: flex;
+    margin: 8px 0px;
+    margin-bottom: -8px;
+  }
+
+  .date-text{
+    display: flex;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: left
+  }
+  
+  .task {
+    text-decoration: none;
+    color: #333;
+    width: 80%;
+  }
+  
+  .task:hover {
+    background-color: #f5f5f5;
+  }
+
+  .content {
+    display: flexbox;
+    border: 1px solid #007bff; /* Border with color and thickness */
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    align-items: center;
+  }
+  
+  .content h3{
+    display: flex;    
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+  .content p {
+    display: flex;    
+    color: black;
+    text-decoration: none;
+    margin-top: -20px;
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+
+  .content-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    align-items: center;    
+  }
+
+  .content-icon-fill {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    align-items: center;  
+    color: #333;  
+  }
+
+  .task-label{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .edit-button{
+    margin-left: auto;
+    width: 5%; 
+    margin: auto;
+    padding-left: 5px ;
+  }
+
+  .star-button{
+    margin-left: auto;
+    width: 5%;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border:  1px solid #007bff;
+  }
+
+  .navigate-button{
+    width: 15%;
+    height: 40px;
+    margin-left: auto;
+    align-items: center;    
+  }
+
+  .delete-button{
+    width: 5%;
+    height: 35px;
+    margin-left: auto;
+    align-items: center; 
+    background-color: red;   
+  }
+
+  .delete-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    align-items: center; 
+    background-color: red;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .display {
+      /* Adjust display styles for smaller screens */
+      flex-direction: column;
+      /* Add other necessary styles for smaller screens */
+    }
+
+    .task-label{
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+
+    .edit-button{
+      width: 7%;
+      height: 35px;   
+      align-items: center;    
+    }
+  
+    .star-button{
+      width: 7%;
+      height: 35px;    
+      justify-content: center;
+    }  
+  
+    .delete-button{
+      width: 7%;
+      height: 35px;       
+    }
+  
+    .delete-icon {
+      width: auto;
+      height: auto;
+      align-items: center;       
+    }
+  }

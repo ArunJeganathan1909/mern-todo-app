@@ -1,0 +1,148 @@
+.index {
+    display: flex;
+    flex-direction: column;
+}
+
+.getStart {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid #333;
+    margin-left: 100px;
+    margin-right: 200px;
+    border-radius: 50px;
+}
+
+.getStart-image {
+    width: 500px;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.getStart-button {
+    width: 200px;
+    height: 40px;
+    margin-top: 400px;
+    margin-left: 100px;
+}
+
+.index h2 {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.about-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-widget-left {
+    display: flex;
+    width: 80%;
+    height: 700px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid #007bff ;
+    border-radius: 40px;
+}
+
+.about-widget-right {
+    display: flex;
+    width: 80%;
+    height: 700px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    border: 5px solid #007bff ;
+    border-radius: 40px;
+}
+
+.image-contain {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    margin: 20px;
+}
+
+.image-contain-coloumn {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+
+.images {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.text-contain {
+    margin: auto 20px;
+    text-align: justify;
+
+}
+
+.text-contain p{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .getStart {
+        flex-direction: column;
+      margin: 20px; /* Adjust margins for smaller screens */
+      border-radius: 20px; /* Adjust border radius */
+    }
+  
+    .getStart-image {
+      width: 80%; /* Occupy full width */
+      margin: 10px auto; /* Center the image */
+    }
+  
+    .getStart-button {
+      width: 80%; /* Occupy most of the width */
+      margin: 20px auto; /* Center the button */
+      margin-left: 10px;
+    }
+  
+    .index h2 {
+      margin: 20px; /* Adjust margin for smaller screens */
+      text-align: center; /* Center the heading */
+    }
+  
+    .about-widget-left,
+    .about-widget-right {
+        flex-direction: column;
+      width: 80%; /* Occupy full width */
+      margin: 20px; /* Adjust margin for smaller screens */
+      height: auto; /* Allow height to adjust based on content */
+      border-radius: 20px; /* Adjust border radius */
+    }
+  
+    .image-contain{
+        width: 100%; /* Occupy full width */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 10px; /* Adjust margin for smaller screens */
+        margin-left: 0px;
+      }
+
+    .image-contain-coloumn {
+        flex-direction: column;
+      width: 100%; /* Occupy full width */
+      height: auto; /* Allow height to adjust based on content */
+      margin: 10px; /* Adjust margin for smaller screens */
+      margin-left: 0px;
+    }
+  
+    .text-contain {
+      margin: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .text-contain p {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  }

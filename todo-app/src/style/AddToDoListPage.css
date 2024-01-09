@@ -1,0 +1,111 @@
+/* Styles for AddToDoListPage component */
+
+/* Base styles */
+.display-header{
+  display: flex;
+}
+
+.navigate-button{
+  width: 15%;
+  height: 40px;
+  margin-left: auto;
+  align-items: center;    
+}
+
+.todo-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .todo-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .todo-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .todo-text-area {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* 2 columns by default */
+    gap: 0.5rem;
+    margin-top: 15px; /* Applied margin-top */
+  }
+  
+  @media (min-width: 768px) {
+    .categories {
+      grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .categories {
+      grid-template-columns: repeat(6, minmax(0, 1fr)); /* 6 columns on large screens */
+    }
+  }
+  
+  
+  .category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 0.75rem;
+    border: 1px solid #000; /* Replace with your desired border styles */
+    border-radius: 20px; /* Adjust border-radius for rounded corners */
+    gap: 0.5rem;
+    
+  }
+  
+  .category-input {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .category-icon{
+    width: 30px;
+    height: 30px;
+    justify-content: left;
+   }
+  
+  .category-text {
+    margin-left: 5px;
+    font-size: 14px;
+    padding-right: 0px;
+    text-align: right;
+  }
+  
+  .save-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
