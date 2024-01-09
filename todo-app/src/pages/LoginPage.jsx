@@ -8,7 +8,7 @@ import IndexHeader from "../layouts/components/IndexHeader";
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { setUser } = useContext(UserContext);
+  const { ready, user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {

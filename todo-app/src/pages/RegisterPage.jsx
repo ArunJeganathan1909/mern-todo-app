@@ -22,7 +22,7 @@ const RegisterPage = () => {
         password,
       });
       alert("Register Successfully. Now you can login.");
-      navigate("/");
+      navigate("/Login");
     } catch (error) {
       alert("Registration failed. Please try again later");
     }

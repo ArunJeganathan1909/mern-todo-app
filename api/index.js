@@ -77,8 +77,8 @@ app.post("/login", async (request, response) => {
 });
 
 app.post('/logout', (request, response) => {
-  response.cookie('token', '').json(true)
-})
+  response.clearCookie('token').json({ message: 'Logged out successfully' });
+});
 
 app.get("/account", (request, response) => {
   const { token } = request.cookies;
